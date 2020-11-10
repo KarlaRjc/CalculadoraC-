@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Base.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Guardar" Clicked="ItemGuardar" />
+
+        <ToolbarItem IconImageSource="iconver.png" Clicked="ItemVer"/>
+    </ContentPage.ToolbarItems>
+  
+    <StackLayout>
+        
+        <Entry x:Name="entNum1" Placeholder="Digite un numero"/>
+        <Entry x:Name="entNum2"  Placeholder="Digite un numero"/>
+
+        <Button x:Name="btnSuma"  Text="Suma"/>
+        <Button x:Name="btnResta" Text="Resta"/>
+        <Button x:Name="btnDivision" Text="Division"/>
+        <Button x:Name="btnMultip" Text="Multiplicacion"/>
+
+        <Button x:Name="btnLimpiar" Text="Limpiar"/>
+        
+        <Label  x:Name="lblResul"/>
+    </StackLayout>
+</ContentPage>

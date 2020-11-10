@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Base.Page1">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal">
+          
+          
+            <ListView x:Name="listaOperac"> <!--- define la lista que esta en Page1.cs -->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Label HeightRequest="50" WidthRequest="50" Margin ="80,0" Text="{Binding Resultado}"></Label> <!--Se establece el atributo de la clase Operaciones-->
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
